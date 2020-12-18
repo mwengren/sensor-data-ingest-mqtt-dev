@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# ioos_pkg_skeleton documentation build configuration file, created by
+# sensor_data_ingest_mqtt_dev documentation build configuration file, created by
 # sphinx-quickstart on Mon Oct  9 21:28:42 2017.
 #
 # This file is execfile()d with the current directory set to its
@@ -52,7 +52,7 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = "ioos_pkg_skeleton"
+project = "sensor_data_ingest_mqtt_dev"
 copyright = "2017, Filipe Fernandes"
 author = "Filipe Fernandes"
 
@@ -60,7 +60,7 @@ author = "Filipe Fernandes"
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
-from ioos_pkg_skeleton import __version__ as VERSION  # noqa
+from sensor_data_ingest_mqtt_dev import __version__ as VERSION  # noqa
 
 
 version = VERSION
@@ -99,9 +99,9 @@ html_theme = "alabaster"
 #
 html_theme_options = {
     "logo": "logo.png",
-    "logo_name": "ioos_pkg_skeleton",
-    "github_user": "ioos",
-    "github_repo": "ioos_pkg_skeleton",
+    "logo_name": "sensor_data_ingest_mqtt_dev",
+    "github_user": "mwengren",
+    "github_repo": "sensor-data-ingest-mqtt-dev",
     "github_banner": True,
     "travis_button": True,
     "fixed_sidebar": True,
@@ -132,7 +132,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "ioos_pkg_skeletondoc"
+htmlhelp_basename = "sensor-data-ingest-mqtt-devdoc"
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -158,8 +158,8 @@ latex_elements = {
 latex_documents = [
     (
         master_doc,
-        "ioos_pkg_skeleton.tex",
-        "ioos_pkg_skeleton Documentation",
+        "sensor_data_ingest_mqtt_dev.tex",
+        "sensor_data_ingest_mqtt_dev Documentation",
         "Filipe Fernandes",
         "manual",
     )
@@ -171,7 +171,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, "ioos_pkg_skeleton", "ioos_pkg_skeleton Documentation", [author], 1)
+    (master_doc, "sensor_data_ingest_mqtt_dev", "sensor_data_ingest_mqtt_dev Documentation", [author], 1)
 ]
 
 
@@ -183,10 +183,10 @@ man_pages = [
 texinfo_documents = [
     (
         master_doc,
-        "ioos_pkg_skeleton",
-        "ioos_pkg_skeleton Documentation",
+        "sensor_data_ingest_mqtt_dev",
+        "sensor_data_ingest_mqtt_dev Documentation",
         author,
-        "ioos_pkg_skeleton",
+        "sensor_data_ingest_mqtt_dev",
         "One line description of project.",
         "Miscellaneous",
     )

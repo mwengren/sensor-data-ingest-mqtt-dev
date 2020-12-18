@@ -7,4 +7,4 @@
 build/
 dist/
 docs/source/tutorial.ipynb
-ioos_pkg_skeleton/_version.py
+sensor_data_ingest_mqtt_dev/_version.py

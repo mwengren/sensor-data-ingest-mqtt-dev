@@ -3,18 +3,13 @@ import pytest
 
 #from sensor_data_ingest_mqtt_dev import meaning_of_life, meaning_of_life_url
 import sensor_data_ingest_mqtt_dev.mqtt_dev
+from sensor_data_ingest_mqtt_dev.topic_config import read_config
 
+@pytest.fixture
+def topic_config():
+    return read_config()
 
-@pytest.mark.web
-def test_mqtt_pub():
-    ret = mqtt_pub()
-
-    assert isinstance(ret, dict)
-    assert "platform_type" in ret
-    assert "ra" in ret
-    assert "platform" in ret
-
-
-def test_mqtt_sub():
-    ret = mqtt_pub()
-    assert isinstance(ret, str)
+def test_read_config(topic_config):
+    assert isinstance(topic_config, dict)
+    for key in ['platform_type','ra','platform','sensor','variable']:
+        assert key in topic_config.keys()

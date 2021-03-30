@@ -1,7 +1,6 @@
 import numpy as np
 import pytest
 
-#from sensor_data_ingest_mqtt_dev import meaning_of_life, meaning_of_life_url
 import sensor_data_ingest_mqtt_dev.mqtt_dev
 from sensor_data_ingest_mqtt_dev.topic_config import read_config
 

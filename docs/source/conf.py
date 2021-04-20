@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 #
 # sensor_data_ingest_mqtt_dev documentation build configuration file, created by
 # sphinx-quickstart on Mon Oct  9 21:28:42 2017.
@@ -61,7 +60,6 @@ author = "Filipe Fernandes"
 # built documents.
 #
 from sensor_data_ingest_mqtt_dev import __version__ as VERSION  # noqa
-
 
 version = VERSION
 # The full version, including alpha/beta/rc tags.
@@ -125,7 +123,7 @@ html_sidebars = {
         "relations.html",  # needs 'show_related': True theme option to display
         "searchbox.html",
         "donate.html",
-    ]
+    ],
 }
 
 
@@ -160,9 +158,9 @@ latex_documents = [
         master_doc,
         "sensor_data_ingest_mqtt_dev.tex",
         "sensor_data_ingest_mqtt_dev Documentation",
-        "Filipe Fernandes",
+        "Micah Wengren",
         "manual",
-    )
+    ),
 ]
 
 
@@ -171,7 +169,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, "sensor_data_ingest_mqtt_dev", "sensor_data_ingest_mqtt_dev Documentation", [author], 1)
+    (master_doc, "sensor_data_ingest_mqtt_dev", "sensor_data_ingest_mqtt_dev Documentation", [author], 1),
 ]
 
 
@@ -189,5 +187,5 @@ texinfo_documents = [
         "sensor_data_ingest_mqtt_dev",
         "One line description of project.",
         "Miscellaneous",
-    )
+    ),
 ]

@@ -1,4 +1,18 @@
 include *.txt
 include README.md
+include pyproject.toml
 
-recursive-include sensor_data_ingest_mqtt_dev *.py
+# CHANGE PKG NAME HERE
+graft sensor_data_ingest_mqtt_dev
+
+prune docs
+prune tests
+prune notebooks
+prune *.egg-info
+
+global-exclude *.nc
+
+exclude *.yml
+exclude *.enc
+exclude .gitignore
+exclude .isort.cfg

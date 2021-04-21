@@ -10,12 +10,6 @@ env:
 matrix:
   fast_finish: true
   include:
-    - name: "python-3.6"
-      env: PY=3.6
-    - name: "python-3.8"
-      env: PY=3.8
-    - name: "coding_standards"
-      env: PY=3
     - name: "tarball"
       env: PY=3
     - name: "docs"
@@ -35,24 +29,14 @@ before_install:
     conda create --name TEST python=$PY --file requirements.txt --file requirements-dev.txt
     source activate TEST
     conda info --all
-
 install:
   - pip install -e . --no-deps --force-reinstall
 
 script:
-  - if [[ $TRAVIS_JOB_NAME == python-* ]]; then
-      cp -r tests/ /tmp ;
-      pushd /tmp && pytest -n 2 -rxs --cov=sensor_data_ingest_mqtt_dev tests && popd ;
-    fi
-
   - if [[ $TRAVIS_JOB_NAME == 'tarball' ]]; then
       pip wheel . -w dist --no-deps ;
       check-manifest --verbose ;
       twine check dist/* ;
-    fi
-
-  - if [[ $TRAVIS_JOB_NAME == 'coding_standards' ]]; then
-      pytest --flake8 -m flake8 ;
     fi
 
   - |

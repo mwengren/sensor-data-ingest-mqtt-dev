@@ -2,7 +2,6 @@
 topic_config
 
 """
-import json
 
 
 def read_config():

@@ -1,7 +1,5 @@
-import numpy as np
 import pytest
 
-import sensor_data_ingest_mqtt_dev.mqtt_dev
 from sensor_data_ingest_mqtt_dev.topic_config import read_config
 
 

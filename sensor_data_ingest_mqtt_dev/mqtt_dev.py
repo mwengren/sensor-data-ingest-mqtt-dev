@@ -160,7 +160,7 @@ def setup_connection(args):
     host_resolver = io.DefaultHostResolver(event_loop_group)
     client_bootstrap = io.ClientBootstrap(event_loop_group, host_resolver)
 
-    if args.use_websocket == True:
+    if args.use_websocket is True:
         proxy_options = None
         if args.proxy_host:
             proxy_options = http.HttpProxyOptions(

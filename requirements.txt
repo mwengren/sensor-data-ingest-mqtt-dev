@@ -1,4 +1,4 @@
+awscrt
+awsiotsdk
 numpy
 requests
-awscrt
-awsiot

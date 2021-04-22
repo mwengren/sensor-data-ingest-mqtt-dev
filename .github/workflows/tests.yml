@@ -16,22 +16,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Setup Conda
-      uses: s-weigand/setup-conda@v1
-      with:
-        activate-conda: false
-        conda-channels: conda-forge
+    - name: Setup python
+      uses: actions/setup-python@v2
 
     - name: Python ${{ matrix.python-version }}
-      shell: bash -l {0}
       run: |
-        conda create --name TEST python=${{ matrix.python-version }} --file requirements.txt --file requirements-dev.txt
-        source activate TEST
+        pip install -r requirements.txt -r requirements-dev.txt
         pip install -e . --no-deps --force-reinstall
-        conda info --all
-        conda list
+
     - name: Tests
-      shell: bash -l {0}
       run: |
-        source activate TEST
-        pytest -rxs --cov=ioos_pkg_skeleton tests
+        pytest -rxs --cov=sensor_data_ingest_mqtt_dev tests

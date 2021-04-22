@@ -169,7 +169,13 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, "sensor_data_ingest_mqtt_dev", "sensor_data_ingest_mqtt_dev Documentation", [author], 1),
+    (
+        master_doc,
+        "sensor_data_ingest_mqtt_dev",
+        "sensor_data_ingest_mqtt_dev Documentation",
+        [author],
+        1,
+    ),
 ]
 
 

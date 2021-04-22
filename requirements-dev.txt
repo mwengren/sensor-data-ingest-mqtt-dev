@@ -9,6 +9,7 @@ flake8-print
 interrogate
 isort
 nbsphinx
+pip
 pre-commit
 pylint
 pytest

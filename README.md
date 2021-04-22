@@ -8,7 +8,7 @@ A basic AWS IoT MQTT test client that publishes randomized messages according to
 
 ### Documentation and Usage
 
-First, configure an AWS IoT Core Thing with associated security artifacts.  See instructions in [this AWS IoT tutorial](https://docs.aws.amazon.com/iot/latest/developerguide/create-iot-resources.html) for an example.  
+First, configure an AWS IoT Core Thing with associated security artifacts.  See instructions in [this AWS IoT tutorial](https://docs.aws.amazon.com/iot/latest/developerguide/create-iot-resources.html) for an example.
 
 The resources created and certificates downloaded are used in the examples below.
 
@@ -46,7 +46,7 @@ mqtt_pub --root-ca certs/AmazonRootCA1.pem --cert certs/device.pem.crt --key cer
 
 ```
 
-Example topic: **IOOS/buoy/NERACOOS/E01/met/air_temperature**  
+Example topic: **IOOS/buoy/NERACOOS/E01/met/air_temperature**
 
 This lets us subscribe many different ways and levels:
 

@@ -59,19 +59,19 @@ def mqtt_pub():
 
         topic = f"IOOS/{platform_type}/{ra}/{platform}/{sensor}/{variable}"
         obs_data = random.uniform(1, 100)
-        msg_json = """
-            { "metadata": {
-                "platform_type": "{platform_type}",
-                "ra": "{ra}",
-                "platform": "{platform}",
-                "sensor": "{sensor}",
-                "variable": "{variable}"
-                },
-            "data": {
-                "value": "{data}"
-                }
-            }
-        """
+        # msg_json = """
+        #     { "metadata": {
+        #         "platform_type": "{platform_type}",
+        #         "ra": "{ra}",
+        #         "platform": "{platform}",
+        #         "sensor": "{sensor}",
+        #         "variable": "{variable}"
+        #         },
+        #     "data": {
+        #         "value": "{data}"
+        #         }
+        #     }
+        # """
         msg_dict = dict()
         msg_dict["metadata"] = {
             "platform_type": platform_type,
